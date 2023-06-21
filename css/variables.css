@@ -1,0 +1,9 @@
+body {
+  /* Colors */
+  --color-blue: #0065fc;
+  --color-light-blue: #deebff;
+  --color-gray: #f2f2f2;
+
+  /* Fonts */
+  --font-family-primary: Raleway;
+}

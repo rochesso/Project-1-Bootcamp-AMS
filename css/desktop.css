@@ -1,0 +1,113 @@
+/* -------------------------HEADER-------------------------- */
+.header {
+  /* To change the margin of the page's top use the below variables */
+  --top-padding: 50px;
+  --border-size: 3px;
+}
+
+/* Making sure the logo's top align with the nav's top */
+.logo {
+  margin-top: calc(var(--border-size) + var(--top-padding));
+}
+
+/* Margin top is being changed so the element doesn't move when hovered */
+.nav-link {
+  margin-top: var(--border-size);
+  padding: var(--top-padding) 25px 0px 25px;
+}
+
+.nav-link:hover {
+  border-top: solid var(--border-size) var(--color-blue);
+  color: var(--color-blue);
+  margin-top: 0px;
+}
+
+/* -------------------------SEARCH-------------------------- */
+.form {
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.form__label {
+  height: inherit;
+}
+
+.form__icon {
+  height: 25px;
+}
+
+.form__input {
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  height: 100%;
+  padding: 0 20px;
+  text-align: inherit;
+  width: 250px;
+}
+
+.form__button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: inherit;
+  height: inherit;
+}
+
+.form__button > i {
+  display: none;
+}
+
+/* ----------------------------FILTERS----------------------------------- */
+.filter {
+  --height: 65px;
+  cursor: pointer;
+  height: var(--height);
+  position: relative;
+  width: fit-content;
+}
+.filter:hover {
+  background-color: var(--color-gray);
+  border-radius: 100px;
+}
+
+.filter > i {
+  background-color: var(--color-light-blue);
+  border-radius: 50%;
+  height: var(--height);
+  margin-right: -30px;
+  width: var(--height);
+  z-index: 10;
+}
+
+.filter__title {
+  border-radius: 0 var(--height) var(--height) 0;
+  font-weight: bold;
+  height: var(--height);
+  padding: 20px 30px 20px 40px;
+  z-index: 9;
+}
+
+/* -------------------INFO--------------------------- */
+.info-icon {
+  height: 30px;
+  padding: 15px;
+  width: 30px;
+}
+
+/* -----------------Accommodations-------------------------- */
+#accommodations {
+  min-width: 56%;
+}
+
+/* -----------------Most Popular----------------- */
+/* Size of the Star on the title */
+.icon {
+  font-size: 23px;
+}
+/* -----------------Activities----------------- */
+
+/* -----------------Footer----------------- */

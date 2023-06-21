@@ -1,0 +1,12 @@
+@media screen and (max-width: 992px) {
+  /* Utility */
+  .tablet-h-450 {
+    height: 450px;
+  }
+  .tablet-gap {
+    gap: 35px;
+  }
+  .tablet-gap-sm {
+    gap: 15px;
+  }
+}

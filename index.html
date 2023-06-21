@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booki</title>
+  <meta name="description" content="Find a place for your dream vacation, downtown or in nature!">
+
+  <!-- CDN -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header flex flex-between w-95-center mobile-w-100">
+    <img class="logo" src="images/logo/Booki.png" alt="Booki logo." title="Logo">
+    <nav class="nav flex gap">
+      <a class="nav-link" href="#accommodations">Accommodations</a>
+      <a class="nav-link" href="#activities">Activities</a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="w-95-center mobile-w-100">
+
+    <section class="mg-top-bottom mobile-w-90-center">
+      <h1>Find a place for your dream vacation</h1>
+      <p>Downtown or in nature</p>
+
+      <!-- Search -->
+      <form class="form h-65 border-tb-gray flex flex-center rounded mg-top-bottom">
+        <label class="form__label bg-gray rounded-left flex flex-center padding-md" for="search">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </label>
+        <input class="form__input" id="search" type="text" placeholder="Type here" name="search">
+        <button class="form__button bg-blue rounded-right flex flex-center padding-md" type="submit">
+          <!-- Span only shows on desktop version and img only on mobile -->
+          <span>Search</span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters mg-top-bottom flex flex-align-center wrap gap mobile-gap mobile-w-90-center">
+      <h3 class="mobile-w-100">Filters</h3>
+
+      <a class="filter flex flex-center">
+        <i class="fa-solid fa-money-bill-wave color-blue flex flex-center"></i>
+        <p class="filter__title border-gray flex flex-center">Low cost</p>
+      </a>
+
+      <a class="filter flex flex-center">
+        <i class="fa-solid fa-child-reaching color-blue flex flex-center"></i>
+        <p class="filter__title border-gray flex flex-center">Family-friendly</p>
+      </a>
+
+      <a class="filter flex flex-center">
+        <i class="fa-solid fa-heart color-blue flex flex-center"></i>
+        <p class="filter__title border-gray flex flex-center">Romantic</p>
+      </a>
+
+      <a class="filter flex flex-center">
+        <i class="fa-solid fa-dog color-blue flex flex-center"></i>
+        <p class="filter__title border-gray flex flex-center">Pets allowed</p>
+      </a>
+    </section>
+
+    <!-- Info -->
+    <div class="flex gap mg-top-bottom mobile-mg-top mobile-w-90-center">
+      <i class="info-icon fa-solid fa-info color-blue border-gray circle flex flex-center"></i>
+      <p>More than 500 accommodations are available in this city</p>
+    </div>
+
+    <!-- Two columns layout -->
+    <div class="flex gap wrap mobile-flex-col">
+
+      <!-- Accommodations -->
+      <!-- id is being used to navigate using the anchor tags and to change the order and some styles for mobile -->
+      <section class="flex-grow-2 bg-gray rounded padding-md mobile-w-90-center" id="accommodations">
+        <h2 class="mg-top-bottom mobile-mg-top">Accommodations in Marseille</h2>
+
+        <div class="flex flex-center gap wrap mobile-gap">
+          <!-- 1 -->
+          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+              <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere."
+                title="Auberge la Cannebiere">
+            </picture>
+            <div class="card-info card-info-md flex flex-col">
+              <h3>Auberge la Cannebiere</h3>
+              <p class="card-text">Night starting at <strong>25€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-gray"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 2 -->
+          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+              <img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port."
+                title="Hotel du port">
+            </picture>
+            <div class="card-info card-info-md flex flex-col">
+              <h3>Hotel du port</h3>
+              <p class="card-text">Night starting at <strong>52€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 3 -->
+          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+              <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel."
+                title="Les mouettes Hotel">
+            </picture>
+            <div class="card-info card-info-md flex flex-col">
+              <h3>Les mouettes Hotel</h3>
+              <p class="card-text">Night starting at <strong>76€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-gray"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 4 -->
+          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+              <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer."
+                title="Hotel de la mer">
+            </picture>
+            <div class="card-info card-info-md flex flex-col">
+              <h3>Hotel de la mer</h3>
+              <p class="card-text">Night starting at <strong>46€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-gray"></i>
+                <i class="fa-solid fa-star color-gray"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 5 -->
+          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+              <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier."
+                title="Auberge Le Panier">
+            </picture>
+            <div class="card-info card-info-md flex flex-col">
+              <h3>Auberge Le Panier</h3>
+              <p class="card-text">Night starting at <strong>23€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-gray"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 6 -->
+          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+              <img src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina."
+                title="Hotel chez Amina">
+            </picture>
+            <div class="card-info card-info-md flex flex-col">
+              <h3>Hotel chez Amina</h3>
+              <p class="card-text">Night starting at <strong>96€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <a class="d-block mg-top-bottom w-fit" href="#"><strong>Show more</strong></a>
+      </section>
+
+      <!-- Most Popular -->
+      <!-- id is being used to change the order and some styles for mobile -->
+      <section class="flex-grow-1 bg-gray rounded padding-md" id="most-popular">
+        <div class="flex flex-between flex-align-center mg-top-bottom mobile-w-90-center mobile-mg-top">
+          <h2>Most Popular</h2>
+          <i class="icon fa-solid fa-star color-black"></i>
+        </div>
+
+        <div class="flex flex-col flex-center gap wrap mobile-gap mobile-w-90-center">
+          <!-- 1 -->
+          <a href="#" class="card card-sm rounded padding-sm flex flex-row flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-left">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+              <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning sun hotel."
+                title="Morning sun hotel">
+            </picture>
+            <!-- info -->
+            <div class="card-info card-info-sm flex flex-col">
+              <h3>Morning sun hotel</h3>
+              <p>Night starting at <strong>128€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 2 -->
+          <a href="#" class="card card-sm rounded padding-sm flex flex-row flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-left">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+              <img src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt="Au coeur de l'eau Bed and Breakfast." title="Au coeur de l'eau Bed and Breakfast">
+            </picture>
+            <!-- info -->
+            <div class="card-info card-info-sm flex flex-col">
+              <h3>Au coeur de l'eau Bed and Breakfast</h3>
+              <p>Night starting at <strong>71€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-gray"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 3 -->
+          <a href="#" class="card card-sm rounded padding-sm flex flex-row flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-left">
+              <source media="(min-width: 992px)"
+                srcset="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+              <img src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt="Tout bleu et Blanc Hotel." title="Tout bleu et Blanc Hotel">
+            </picture>
+            <!-- info -->
+            <div class="card-info card-info-sm flex flex-col">
+              <h3>Tout bleu et Blanc Hotel</h3>
+              <p>Night starting at <strong>68€</strong></p>
+              <div class="stars">
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-blue"></i>
+                <i class="fa-solid fa-star color-gray"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Activities -->
+    <section class="mg-top mobile-w-90-center" id="activities">
+      <h2 class="mg-top-bottom mobile-mg-top">Activities in Marseille</h2>
+
+      <div class="flex gap-lg h-600 tablet-gap-sm tablet-h-450 mobile-flex-col mobile-gap-lg">
+        <div class="flex flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg mobile-align-center">
+          <!-- 1 -->
+          <a href="#" class="card flex-grow-1 rounded flex flex-col flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/activities/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/activities/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+              <img src="images/activities/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port."
+                title="Old Port">
+            </picture>
+            <!-- info -->
+            <h3 class="card-title">Old Port</h3>
+          </a>
+
+        </div>
+
+        <div class="flex flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg mobile-align-center">
+          <!-- 2 -->
+          <a href="#" class="card flex-grow-3 rounded flex flex-col flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/activities/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/activities/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+              <img src="images/activities/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort."
+                title="Pomegues Fort">
+            </picture>
+            <!-- info -->
+            <h3 class="card-title">Pomegues Fort</h3>
+          </a>
+
+          <!-- 3 -->
+          <a href="#" class="card flex-grow-2 rounded flex flex-col flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/activities/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/activities/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+              <img src="images/activities/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island."
+                title="Frioul Island">
+            </picture>
+            <!-- info -->
+            <h3 class="card-title">Frioul Island</h3>
+          </a>
+
+        </div>
+
+        <div class="flex flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg mobile-align-center">
+          <!-- 4 -->
+          <a href="#" class="card flex-grow-1 rounded flex flex-col flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/activities/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/activities/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+              <img src="images/activities/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Calanques National Park." title="Calanques National Park">
+            </picture>
+            <!-- info -->
+            <h3 class="card-title">Calanques National Park</h3>
+          </a>
+        </div>
+
+        <div class="flex flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg mobile-align-center">
+          <!-- 5 -->
+          <a href="#" class="card flex-grow-2 rounded flex flex-col flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/activities/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/activities/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+              <img src="images/activities/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde."
+                title="Notre-Dame-de-la-Garde">
+            </picture>
+            <!-- info -->
+            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+          </a>
+
+          <!-- 6 -->
+          <a href="#" class="card flex-grow-3 rounded flex flex-col flex-justify-center">
+            <!-- Image -->
+            <picture class="card-pic rounded-top">
+              <source media="(min-width: 992px)"
+                srcset="images/activities/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+              <source media="(max-width: 992px)"
+                srcset="images/activities/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+              <img src="images/activities/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park."
+                title="Longchamp Park">
+            </picture>
+            <!-- info -->
+            <h3 class="card-title">Longchamp Park</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mg-top bg-gray" id="footer">
+    <div class="flex w-95-center padding-top-bottom tablet-gap mobile-w-90-center mobile-flex-col">
+      <div class="flex flex-col flex-grow-1 gap-sm">
+        <h4>About</h4>
+        <ul class="flex flex-col gap-extra-sm">
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">General Terms and Conditions</a></li>
+          <li><a href="#">Data and Privacy</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col flex-grow-1 gap-sm">
+        <h4>Our Accommodations</h4>
+        <ul class="flex flex-col gap-extra-sm">
+          <li><a href="#">Quality Assessment</a></li>
+          <li><a href="#">You have a hotel?</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col flex-grow-1 gap-sm">
+        <h4>Assistance</h4>
+        <ul class="flex flex-col gap-extra-sm">
+          <li><a href="#">Help Desk</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

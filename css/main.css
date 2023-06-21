@@ -1,0 +1,24 @@
+/* Fonts */
+@import "fonts.css";
+
+/* Css Variables */
+@import "variables.css";
+
+/* Normalize css file */
+@import "normalize.css";
+
+/* Utility */
+@import "utility.css";
+@import "card.css";
+
+/* This website is Desktop first */
+/* On screens that are more than 992px */
+@import "desktop.css";
+
+/* Tablet queries */
+/* On screens that are between 992px and 768px */
+@import "tablet.css";
+
+/* Mobile queries */
+/* On screens that are less than 768px */
+@import "mobile.css";

@@ -1,0 +1,159 @@
+/* Flex */
+/*#region Flex */
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-align-end {
+  align-items: end;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-grow-1 {
+  flex: 1;
+}
+.flex-grow-2 {
+  flex: 2;
+}
+.flex-grow-3 {
+  flex: 3;
+}
+.gap {
+  gap: 30px;
+}
+.gap-sm {
+  gap: 15px;
+}
+.gap-extra-sm {
+  gap: 5px;
+}
+.gap-lg {
+  gap: 45px;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+/* #endregion */
+
+/* Margins */
+/* #region Margins */
+.mg-top-bottom {
+  margin: 50px 0 30px 0;
+}
+.mg-top {
+  margin-top: 90px;
+}
+/* #endregion */
+
+/* Padding */
+/* #region Margins */
+.padding-sm {
+  padding: 10px;
+}
+.padding-md {
+  padding: 25px;
+}
+.padding-top-bottom {
+  padding: 60px 0;
+}
+/* #endregion */
+
+/* Border */
+/* #region Margins */
+.border-gray {
+  border: solid 3px var(--color-gray);
+}
+.border-tb-gray {
+  border-bottom: solid 1px var(--color-gray);
+  border-top: solid 1px var(--color-gray);
+}
+/* #endregion */
+
+/* Colors */
+/* #region Margins */
+.bg-gray {
+  background-color: var(--color-gray);
+}
+.bg-blue {
+  background-color: var(--color-blue);
+}
+.color-blue {
+  color: var(--color-blue);
+}
+.color-gray {
+  color: var(--color-gray);
+}
+.color-black {
+  color: black;
+}
+/* #endregion */
+
+/* Rounded */
+/* #region Margins */
+.rounded {
+  border-radius: 20px;
+}
+.rounded-left {
+  border-radius: 20px 0 0 20px;
+}
+.rounded-right {
+  border-radius: 0 20px 20px 0;
+}
+.rounded-top {
+  border-radius: 20px 20px 0 0;
+}
+.circle {
+  border-radius: 50%;
+}
+/* #endregion */
+
+/* Height */
+/* #region Margins */
+.h-100 {
+  height: 100%;
+}
+.h-65 {
+  height: 65px;
+}
+.h-600 {
+  height: 600px;
+}
+/* #endregion */
+
+/* width */
+/* #region Margins */
+.w-100 {
+  width: 100%;
+}
+.w-95-center {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.w-fit {
+  width: fit-content;
+}
+/* #endregion */
+
+/* Display */
+/* #region Margins */
+.d-block {
+  display: block;
+}
+/* #endregion */

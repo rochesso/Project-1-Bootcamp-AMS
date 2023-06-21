@@ -1,0 +1,147 @@
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 99%;
+  }
+
+  /* Utility */
+  .mobile-w-100 {
+    width: 100%;
+  }
+  .mobile-w-90-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .mobile-align-center {
+    align-items: center;
+  }
+  .mobile-flex-col {
+    flex-direction: column;
+  }
+  .mobile-mg-top {
+    margin-top: 20px;
+  }
+  .mobile-gap {
+    gap: 15px;
+  }
+  .mobile-gap-lg {
+    gap: 30px;
+  }
+
+  /* -------------------------HEADER-------------------- */
+  .header {
+    align-items: center;
+    flex-direction: column;
+    --border-size: 3px;
+    --margin-bottom: 15px;
+  }
+
+  .logo {
+    margin-bottom: 50px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Margin bottom is being changed so the element doesn't move when hovered */
+  .nav-link {
+    border-bottom: solid var(--border-size) var(--color-gray);
+    flex-grow: 1;
+    /* Resetting the margin-top from the Desktop css */
+    margin-top: 0px;
+    padding-bottom: 15px;
+    /* Resetting the padding-top from the Desktop css */
+    padding-top: 0px;
+  }
+  .nav-link:hover {
+    border-bottom: solid var(--border-size) var(--color-blue);
+    /* Removing the border-top from the Desktop css */
+    border-top: none;
+  }
+
+  /* -------------------------SEARCH-------------------------- */
+  /* Making it smaller to fit the small screen */
+  .form__input {
+    width: 200px;
+  }
+
+  .form__button {
+    border-radius: 20px;
+  }
+
+  .form__button > i {
+    /* Making the icon white instead of black */
+    color: white;
+    /* Showing the icon instead of the text */
+    display: inline-block;
+  }
+
+  /* Removing the text "Search" */
+  .form__button > span {
+    display: none;
+  }
+  /* ----------------------------FILTERS----------------------------------- */
+  .filter {
+    --height: 50px;
+  }
+
+  .filter__title {
+    padding: 20px 25px 20px 40px;
+  }
+
+  /* Changed the order to match the mock-up */
+  .filters :nth-child(1) {
+    order: 1;
+  }
+  .filters :nth-child(2) {
+    order: 2;
+  }
+  .filters :nth-child(3) {
+    order: 4;
+  }
+  .filters :nth-child(4) {
+    order: 3;
+  }
+  .filters :nth-child(5) {
+    order: 5;
+  }
+
+  /* -----------------------------------ACCOMMODATIONS---------------------------------------- */
+  #accommodations {
+    background-color: white;
+    border-radius: 0;
+    order: 2;
+    padding: 0;
+  }
+  /* -------------------------------------MOST POPULAR----------------------------------------------- */
+  #most-popular {
+    border-radius: 0;
+    order: 1;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* -------------------------------------ACTIVITIES----------------------------------------------- */
+  /* Remove the top margin from the desktop version */
+  #activities {
+    margin: 0 auto;
+  }
+
+  /* Changes the height of the container with the cards from 600px to auto */
+  #activities > div {
+    height: auto;
+  }
+  /* -------------------------------------FOOTER----------------------------------------------- */
+  #footer {
+    margin-top: 40px;
+  }
+
+  #footer > div {
+    padding: 40px 0;
+  }
+}
