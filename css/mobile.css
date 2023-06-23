@@ -7,10 +7,12 @@
   .mobile-w-100 {
     width: 100%;
   }
-  .mobile-w-90-center {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+  .mobile-padding-x-md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mobile-padding-0 {
+    padding: 0;
   }
   .mobile-align-center {
     align-items: center;
@@ -18,8 +20,8 @@
   .mobile-flex-col {
     flex-direction: column;
   }
-  .mobile-mg-top {
-    margin-top: 20px;
+  .mobile-margin-top {
+    margin-top: 15px;
   }
   .mobile-gap {
     gap: 15px;
@@ -47,9 +49,10 @@
     width: 100%;
   }
 
-  /* Margin bottom is being changed so the element doesn't move when hovered */
   .nav-link {
     border-bottom: solid var(--border-size) var(--color-gray);
+    /* Removing the border-top from the Desktop css */
+    border-top: none;
     flex-grow: 1;
     /* Resetting the margin-top from the Desktop css */
     margin-top: 0px;
@@ -65,10 +68,6 @@
 
   /* -------------------------SEARCH-------------------------- */
   /* Making it smaller to fit the small screen */
-  .form__input {
-    width: 200px;
-  }
-
   .form__button {
     border-radius: 20px;
   }
@@ -115,7 +114,6 @@
     background-color: white;
     border-radius: 0;
     order: 2;
-    padding: 0;
   }
   /* -------------------------------------MOST POPULAR----------------------------------------------- */
   #most-popular {
@@ -131,17 +129,8 @@
   #activities {
     margin: 0 auto;
   }
-
-  /* Changes the height of the container with the cards from 600px to auto */
-  #activities > div {
-    height: auto;
-  }
   /* -------------------------------------FOOTER----------------------------------------------- */
   #footer {
     margin-top: 40px;
-  }
-
-  #footer > div {
-    padding: 40px 0;
   }
 }

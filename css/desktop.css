@@ -10,24 +10,20 @@
   margin-top: calc(var(--border-size) + var(--top-padding));
 }
 
-/* Margin top is being changed so the element doesn't move when hovered */
+/* Using border transparent so the element doesn't move when hovered */
 .nav-link {
-  margin-top: var(--border-size);
+  border-top: solid var(--border-size) transparent;
   padding: var(--top-padding) 25px 0px 25px;
 }
 
 .nav-link:hover {
   border-top: solid var(--border-size) var(--color-blue);
   color: var(--color-blue);
-  margin-top: 0px;
 }
 
 /* -------------------------SEARCH-------------------------- */
 .form {
-  font-weight: bold;
-  position: relative;
-  text-align: center;
-  width: fit-content;
+  height: 65px;
 }
 
 .form__label {
@@ -43,9 +39,10 @@
   font-size: inherit;
   font-weight: inherit;
   height: 100%;
-  padding: 0 20px;
+  max-width: 250px;
+  min-width: 125px;
   text-align: inherit;
-  width: 250px;
+  width: 100%;
 }
 
 .form__button {
@@ -99,8 +96,9 @@
 }
 
 /* -----------------Accommodations-------------------------- */
+/* Makes the most popular section wrap if the screen becomes to small */
 #accommodations {
-  min-width: 56%;
+  min-width: 62%;
 }
 
 /* -----------------Most Popular----------------- */
@@ -109,5 +107,8 @@
   font-size: 23px;
 }
 /* -----------------Activities----------------- */
-
+/* Needs to have a specific height because all cards are using flex grow */
+#activities > div {
+  height: 600px;
+}
 /* -----------------Footer----------------- */

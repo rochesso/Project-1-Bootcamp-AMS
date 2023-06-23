@@ -1,12 +1,22 @@
 @media screen and (max-width: 992px) {
   /* Utility */
-  .tablet-h-450 {
-    height: 450px;
+  .padding-x-lg {
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .tablet-gap {
     gap: 35px;
   }
   .tablet-gap-sm {
     gap: 15px;
+  }
+  .tablet-flex-justify-left {
+    justify-content: left;
+  }
+
+  /* -----------------Activities----------------- */
+  /* Height auto because the cards will have a specific min-height */
+  #activities > div {
+    height: auto;
   }
 }

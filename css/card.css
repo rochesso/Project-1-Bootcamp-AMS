@@ -1,14 +1,18 @@
 .card {
   background-color: white;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  max-width: 950px;
 }
 .card-sm {
+  flex: 1 1 0;
   height: 200px;
-  width: 520px;
+  max-width: 600px;
+  min-width: 398px;
 }
 .card-md {
-  height: 270px;
-  width: 340px;
+  flex: 1 1 0;
+  height: 280px;
+  min-width: 300px;
 }
 .card-pic {
   flex: 2 1 0;
@@ -25,21 +29,22 @@
 }
 .card-info {
   height: 100%;
-  margin-left: 20px;
+  padding: 10px;
 }
 .card-info > * {
   flex: 1;
-  margin: 5px 0;
+}
+.card-info > :nth-child(2) {
+  margin: 10px 0;
 }
 .card-info-md {
   flex: 1 1 0;
 }
 .card-info-sm {
   flex: 3 1 0;
-  padding: 10px 15px;
 }
 .card-title {
-  margin: 20px;
+  padding: 15px;
 }
 .stars {
   align-items: flex-end;
@@ -48,19 +53,57 @@
 .stars > img {
   height: 20px;
 }
-
+@media screen and (max-width: 992px) {
+  .card-sm {
+    height: 220px;
+    max-width: 950px;
+    min-width: 450px;
+  }
+  .card-md {
+    height: 350px;
+    min-width: 285px;
+  }
+  .card-lg {
+    min-height: 180px;
+    min-width: 300px;
+  }
+}
 @media screen and (max-width: 768px) {
   .card {
     flex: auto;
-    height: 220px;
-    max-width: 400px;
+    height: 55vw;
+    max-height: 300px;
+    min-width: 250x;
     width: 100%;
   }
   .card-sm {
-    height: 150px;
+    height: 45vw;
+    max-height: 220px;
+    min-width: 250px;
+  }
+  .card-md {
+    min-width: 250px;
+  }
+  .card-lg {
+    min-width: 250px;
+  }
+  .card-info {
+    padding: 5px;
+  }
+  .card-info-md {
+    flex: 0;
+  }
+  .card-info > :nth-child(2) {
+    margin: 5px 0;
   }
   .card-info-sm {
     flex: 3 1 0;
-    padding: 5px 0px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card-sm {
+    height: 55vw;
   }
 }
