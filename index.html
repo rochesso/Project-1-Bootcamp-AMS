@@ -17,10 +17,14 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
+<!-- CSS Abbreviations -->
+<!-- w = width -->
+<!-- X = X axis = Left and Right -->
+<!-- Y = Y axis = Top and Bottom -->
+
 <body>
   <!-- Header -->
-  <!-- w = width -->
-  <header class="header flex flex-between w-95-center mobile-w-100">
+  <header class="header flex flex-between padding-x-lg mobile-padding-0 mobile-align-center mobile-flex-col">
     <img class="logo" src="images/logo/Booki.png" alt="Booki logo." title="Logo">
     <nav class="nav flex gap">
       <a class="nav-link" href="#accommodations">Accommodations</a>
@@ -29,11 +33,9 @@
   </header>
 
   <!-- Main -->
-  <!-- Best to use padding instead of percentage -->
-  <!-- Container with padding and max width -->
-  <!-- X = X axis = Left and Right -->
+  <!-- Best to use padding instead of width with percentage -->
+  <!-- Container with padding -->
   <main class="padding-x-lg mobile-padding-0">
-    <!-- Y = Y axis = Top and Bottom -->
     <section class="margin-y mobile-padding-x-md">
       <h1>Find a place for your dream vacation</h1>
       <p>Downtown or in nature</p>
@@ -57,22 +59,22 @@
     <section class="filters margin-y flex flex-align-center wrap gap mobile-gap mobile-padding-x-md">
       <h3 class="mobile-w-100">Filters</h3>
 
-      <a class="filter flex flex-center">
+      <a class="filter flex">
         <i class="fa-solid fa-money-bill-wave color-blue flex flex-center"></i>
         <p class="filter__title border-gray flex flex-center">Low cost</p>
       </a>
 
-      <a class="filter flex flex-center">
+      <a class="filter flex">
         <i class="fa-solid fa-child-reaching color-blue flex flex-center"></i>
         <p class="filter__title border-gray flex flex-center">Family-friendly</p>
       </a>
 
-      <a class="filter flex flex-center">
+      <a class="filter flex">
         <i class="fa-solid fa-heart color-blue flex flex-center"></i>
         <p class="filter__title border-gray flex flex-center">Romantic</p>
       </a>
 
-      <a class="filter flex flex-center">
+      <a class="filter flex">
         <i class="fa-solid fa-dog color-blue flex flex-center"></i>
         <p class="filter__title border-gray flex flex-center">Pets allowed</p>
       </a>
@@ -88,8 +90,7 @@
     <div class="flex gap wrap mobile-flex-col">
       <!-- Cards need to be aligned with the title on left -->
       <!-- 3 cards in each row -->
-      <!-- Cards needs to use all the space -->
-      <!-- Only image with fixed height  -->
+      <!-- Cards need to use all the space -->
 
       <!-- Accommodations -->
       <!-- id is being used to navigate using the anchor tags and to change the order and some styles for mobile -->
@@ -98,7 +99,7 @@
 
         <div class="flex gap wrap w-fit margin-x-auto mobile-gap">
           <!-- 1 -->
-          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+          <a href="#" class="card card-md rounded padding-sm flex flex-col">
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
                 srcset="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
@@ -121,7 +122,7 @@
           </a>
 
           <!-- 2 -->
-          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+          <a href="#" class="card card-md rounded padding-sm flex flex-col">
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
                 srcset="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
@@ -144,7 +145,7 @@
           </a>
 
           <!-- 3 -->
-          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+          <a href="#" class="card card-md rounded padding-sm flex flex-col">
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
                 srcset="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
@@ -167,7 +168,7 @@
           </a>
 
           <!-- 4 -->
-          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+          <a href="#" class="card card-md rounded padding-sm flex flex-col">
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
                 srcset="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
@@ -190,7 +191,7 @@
           </a>
 
           <!-- 5 -->
-          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+          <a href="#" class="card card-md rounded padding-sm flex flex-col">
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
                 srcset="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
@@ -213,7 +214,7 @@
           </a>
 
           <!-- 6 -->
-          <a href="#" class="card card-md rounded padding-sm flex flex-col flex-justify-center">
+          <a href="#" class="card card-md rounded padding-sm flex flex-col">
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
                 srcset="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
@@ -249,7 +250,7 @@
 
         <div class="flex flex-justify-center gap wrap tablet-flex-justify-left mobile-gap mobile-padding-x-md">
           <!-- 1 -->
-          <a href="#" class="card card-sm rounded padding-sm flex flex-row flex-justify-center">
+          <a href="#" class="card card-sm rounded padding-sm flex flex-row">
             <!-- Image -->
             <picture class="card-pic rounded-left">
               <source media="(min-width: 992px)"
@@ -274,7 +275,7 @@
           </a>
 
           <!-- 2 -->
-          <a href="#" class="card card-sm rounded padding-sm flex flex-row flex-justify-center">
+          <a href="#" class="card card-sm rounded padding-sm flex flex-row">
             <!-- Image -->
             <picture class="card-pic rounded-left">
               <source media="(min-width: 992px)"
@@ -299,7 +300,7 @@
           </a>
 
           <!-- 3 -->
-          <a href="#" class="card card-sm rounded padding-sm flex flex-row flex-justify-center">
+          <a href="#" class="card card-sm rounded padding-sm flex flex-row">
             <!-- Image -->
             <picture class="card-pic rounded-left">
               <source media="(min-width: 992px)"
@@ -334,7 +335,7 @@
       <div class="flex wrap gap-lg tablet-gap-sm mobile-flex-col mobile-gap-lg">
         <div class="flex flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg">
           <!-- 1 -->
-          <a href="#" class="card card-lg flex-grow-1 rounded flex flex-col flex-justify-center">
+          <a href="#" class="card card-lg flex-grow-1 rounded flex flex-col">
             <!-- Image -->
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
@@ -352,7 +353,7 @@
 
         <div class="flex wrap flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg">
           <!-- 2 -->
-          <a href="#" class="card card-lg flex-grow-3 rounded flex flex-col flex-justify-center">
+          <a href="#" class="card card-lg flex-grow-3 rounded flex flex-col ">
             <!-- Image -->
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
@@ -367,7 +368,7 @@
           </a>
 
           <!-- 3 -->
-          <a href="#" class="card card-lg flex-grow-2 rounded flex flex-col flex-justify-center">
+          <a href="#" class="card card-lg flex-grow-2 rounded flex flex-col ">
             <!-- Image -->
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
@@ -385,7 +386,7 @@
 
         <div class="flex wrap flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg">
           <!-- 4 -->
-          <a href="#" class="card card-lg flex-grow-1 rounded flex flex-col flex-justify-center">
+          <a href="#" class="card card-lg flex-grow-1 rounded flex flex-col">
             <!-- Image -->
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
@@ -402,7 +403,7 @@
 
         <div class="flex wrap flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg">
           <!-- 5 -->
-          <a href="#" class="card card-lg flex-grow-2 rounded flex flex-col flex-justify-center">
+          <a href="#" class="card card-lg flex-grow-2 rounded flex flex-col">
             <!-- Image -->
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
@@ -417,7 +418,7 @@
           </a>
 
           <!-- 6 -->
-          <a href="#" class="card card-lg flex-grow-3 rounded flex flex-col flex-justify-center">
+          <a href="#" class="card card-lg flex-grow-3 rounded flex flex-col">
             <!-- Image -->
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
@@ -435,6 +436,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="margin-top bg-gray" id="footer">
     <div class="flex padding-x-lg padding-y tablet-gap mobile-padding-x-md mobile-flex-col">
       <div class="flex flex-col flex-grow-1 gap-sm">

@@ -32,9 +32,6 @@
 
   /* -------------------------HEADER-------------------- */
   .header {
-    align-items: center;
-    flex-direction: column;
-    --border-size: 3px;
     --margin-bottom: 15px;
   }
 
