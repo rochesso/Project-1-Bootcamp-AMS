@@ -89,6 +89,9 @@
 }
 
 /* -------------------INFO--------------------------- */
+.info {
+  max-width: 550px;
+}
 .info-icon {
   height: 30px;
   padding: 15px;

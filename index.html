@@ -36,18 +36,18 @@
   <!-- Best to use padding instead of width with percentage -->
   <!-- Container with padding -->
   <main class="padding-x-lg mobile-padding-0">
-    <section class="margin-y mobile-padding-x-md">
+    <section class="margin-y mobile-padding-x-md mobile-margin-y">
       <h1>Find a place for your dream vacation</h1>
       <p>Downtown or in nature</p>
 
       <!-- Search -->
-      <form class="form w-fit text-bold border-y-gray flex flex-center rounded margin-y">
-        <label class="form__label bg-gray rounded-left flex flex-center padding-md" for="search">
+      <form class="form w-fit text-bold border-y-gray flex flex-center rounded margin-y-sm mobile-margin-y">
+        <label class="form__label bg-gray rounded-left flex flex-center padding-x" for="search">
           <i class="fa-sharp fa-solid fa-location-dot"></i>
         </label>
         <!-- Align to left -->
         <input class="form__input padding-x-md" id="search" type="text" placeholder="Type here" name="search">
-        <button class="form__button bg-blue rounded-right flex flex-center padding-md" type="submit">
+        <button class="form__button bg-blue rounded-right flex flex-center padding-x" type="submit">
           <!-- Span only shows on desktop version and img only on mobile -->
           <span>Search</span>
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -56,7 +56,7 @@
     </section>
 
     <!-- Filters -->
-    <section class="filters margin-y flex flex-align-center wrap gap mobile-gap mobile-padding-x-md">
+    <section class="filters margin-y flex flex-align-center wrap gap mobile-gap mobile-padding-x-md mobile-margin-y">
       <h3 class="mobile-w-100">Filters</h3>
 
       <a class="filter flex">
@@ -81,13 +81,13 @@
     </section>
 
     <!-- Info -->
-    <div class="flex gap-sm margin-y mobile-margin-top mobile-padding-x-md">
+    <div class="info flex gap-sm margin-y mobile-margin-top mobile-padding-x-md">
       <i class="info-icon fa-solid fa-info color-blue border-gray circle flex flex-center"></i>
       <p>More than 500 accommodations are available in this city</p>
     </div>
 
     <!-- Two columns layout -->
-    <div class="flex gap wrap mobile-flex-col">
+    <div class="flex gap wrap mobile-flex-col mobile-gap-0">
       <!-- Cards need to be aligned with the title on left -->
       <!-- 3 cards in each row -->
       <!-- Cards need to use all the space -->
@@ -95,7 +95,7 @@
       <!-- Accommodations -->
       <!-- id is being used to navigate using the anchor tags and to change the order and some styles for mobile -->
       <section class="flex-grow-2 bg-gray rounded padding-md mobile-padding-x-md" id="accommodations">
-        <h2 class="margin-y mobile-margin-top">Accommodations in Marseille</h2>
+        <h2 class="margin-y-sm mobile-margin-top-0">Accommodations in Marseille</h2>
 
         <div class="flex gap wrap w-fit margin-x-auto mobile-gap">
           <!-- 1 -->
@@ -243,7 +243,7 @@
       <!-- Most Popular -->
       <!-- id is being used to change the order and some styles for mobile -->
       <section class="flex-grow-1 bg-gray rounded padding-md" id="most-popular">
-        <div class="flex flex-between flex-align-center margin-y mobile-padding-x-md mobile-margin-top">
+        <div class="flex flex-between flex-align-center margin-y-sm mobile-padding-x-md mobile-margin-top-0">
           <h2>Most Popular</h2>
           <i class="icon fa-solid fa-star color-black"></i>
         </div>
@@ -330,7 +330,7 @@
     <!-- Activities -->
     <!-- id is being used to change some styles for mobile (height and margin) -->
     <section class="margin-top mobile-padding-x-md" id="activities">
-      <h2 class="margin-y mobile-margin-top">Activities in Marseille</h2>
+      <h2 class="margin-y mobile-margin-top-0">Activities in Marseille</h2>
 
       <div class="flex wrap gap-lg tablet-gap-sm mobile-flex-col mobile-gap-lg">
         <div class="flex flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg">
@@ -403,7 +403,7 @@
 
         <div class="flex wrap flex-col flex-grow-1 gap-lg tablet-gap-sm mobile-gap-lg">
           <!-- 5 -->
-          <a href="#" class="card card-lg flex-grow-2 rounded flex flex-col">
+          <a href="#" class="card card-lg flex-grow-1 rounded flex flex-col">
             <!-- Image -->
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
@@ -418,7 +418,7 @@
           </a>
 
           <!-- 6 -->
-          <a href="#" class="card card-lg flex-grow-3 rounded flex flex-col">
+          <a href="#" class="card card-lg flex-grow-1 rounded flex flex-col">
             <!-- Image -->
             <picture class="card-pic rounded-top">
               <source media="(min-width: 992px)"
@@ -438,7 +438,7 @@
 
   <!-- Footer -->
   <footer class="margin-top bg-gray" id="footer">
-    <div class="flex padding-x-lg padding-y tablet-gap mobile-padding-x-md mobile-flex-col">
+    <div class="flex padding-x-lg padding-y tablet-gap mobile-padding-x-md mobile-flex-col mobile-padding-y">
       <div class="flex flex-col flex-grow-1 gap-sm">
         <h4>About</h4>
         <ul class="flex flex-col gap-extra-sm">
