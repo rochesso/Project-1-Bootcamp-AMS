@@ -1,3 +1,9 @@
+/* If the screen is too big, it will limit the width */
+.container {
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
 /* -------------------------HEADER-------------------------- */
 .header {
   /* To change the margin of the page's top use the below variables */

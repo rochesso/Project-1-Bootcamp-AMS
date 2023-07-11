@@ -181,3 +181,8 @@
   text-align: center;
 }
 /* #endregion */
+
+/* Hover */
+.hover-color-blue:hover {
+  color: var(--color-blue);
+}

@@ -3,6 +3,20 @@
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
   max-width: 950px;
 }
+
+/* All cards, less the ones in Activities */
+.card:not(.card-lg) {
+  border: 2px solid transparent;
+}
+
+.card:not(.card-lg):hover {
+  border: 2px solid var(--color-blue);
+}
+
+.card:is(.card-lg):hover {
+  color: var(--color-blue);
+}
+
 .card-sm {
   flex: 1 1 0;
   height: 200px;
